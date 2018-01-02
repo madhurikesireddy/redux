@@ -13,7 +13,7 @@ router.get('/', function *(next) {
 router.get('/suggest', function *(next) {
   const q = this.request.query.q;
   console.log('query', q);
-  const qVal = q.trim().toLowerCase();
+  const qVal = q.trim().toUpperCase();
   const qLen = qVal.length;
   const list = qLen === 0 ? [] : languages.filter(item =>
     item.name.toLowerCase().slice(0, qLen) === qVal

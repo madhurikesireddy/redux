@@ -1,7 +1,7 @@
 export default [
   {
     "code": "ab",
-    "name": "Abkhaz"
+    "name": "Ahhhhhj"
   },
   {
     "code": "aa",
